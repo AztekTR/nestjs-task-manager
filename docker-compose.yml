@@ -1,0 +1,16 @@
+version: "2"
+services:
+  postgres:
+    image: "postgres"
+    hostname: nest-postgres
+    environment: 
+      POSTGRES_PASSWORD: nestjscourse
+    ports:
+      - "5002:5432"
+  pgadmin:
+    image: "dpage/pgadmin4"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: rubickaghanims@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: senior
+    ports:
+      - "81:80"
